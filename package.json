@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nitro build",
+    "dev": "nitro dev",
+    "test": "vitest",
+    "cloudflare:types": "wrangler types",
+    "cloudflare:preview": "...",
+    "cloudflare:deploy": "..."
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240405.0",
+    "nitro-cloudflare-dev": "^0.1.4",
+    "nitropack": "latest",
+    "vitest": "^1.4.0",
+    "wrangler": "^3.48.0"
+  }
+}
