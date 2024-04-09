@@ -15,7 +15,7 @@ where `success` indicate the success of the retrieval and `value` is the value o
 
 > Note: a value for the `CFLARE` key is already present in the local KV store
 
-__POST__ requests (with a `text/plain` `content-type` header) to `/kv/<KEY>` should return a result such as:
+__PUT__ requests (with a `text/plain` `content-type` header) to `/kv/<KEY>` should return a result such as:
 ```ts
 {
     success: boolean,
