@@ -5,11 +5,11 @@ test("the dev server should be running", async () => {
   expect(text).toBe("Not implemented use `/kv/<KEY>` instead");
 });
 
-test("/kv/CFLARE should return the pre-populated value", async () => {
-  const json = await (await fetch("http://localhost:3000/kv/CFLARE")).json();
+test("/kv/<KEY> should return a pre-populated value", async () => {
+  const json = await (await fetch("http://localhost:3000/kv/b8a578b9-6626-44f8-9e36-57e1f27eabc3")).json();
   expect(json).toEqual({
     success: true,
-    value: "this is the value of CFLARE!",
+    value: "this is a pre-populated value for b8a578b9-6626-44f8-9e36-57e1f27eabc3",
   });
 });
 
